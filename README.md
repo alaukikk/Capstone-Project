@@ -1,7 +1,5 @@
 # Capstone-Project  
 
-Here you go — one-liner per file, plain language, grouped by folder.
-
 api/ — the front door
 - main.py — wires everything together; this is what actually runs when a request comes in
 - settings.py — app-level settings (API keys, ports, env variables)
