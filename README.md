@@ -28,7 +28,7 @@ interface/ — what the user sees
 llm/ — talks to the actual AI models
 - gateway.py — the raw API client (handles auth, retries, request/response format)
 
-logging/ — keeps a record
+audit/ — keeps a record
 - audit_log.py — logs every decision made and why
 - metrics.py — tracks numbers over time (cost saved, escalation rate, etc.)
 
