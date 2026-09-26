@@ -1,1 +1,14 @@
 
+default:
+  fail_closed: true   # unknown/unlisted rule_ids fail closed by default
+
+rules:
+  DP-001: { fail_closed: true }
+  DP-002: { fail_closed: true }
+  DC-001: { fail_closed: true }
+  DC-002: { fail_closed: false }   # low-severity/latency-sensitive -> fail open
+  HAC-001: { fail_closed: true }
+  HAC-002: { fail_closed: false }
+
+stage0_screen:
+  fail_closed: true   # Stage 0 always fails closed, no per-rule override
